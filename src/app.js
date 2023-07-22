@@ -23,7 +23,7 @@ app.set('view engine', 'handlebars');
 
 /**
  * User mongo sessions
- */
+ *
 app.use(session({
     store: MongoStore.create({
         mongoUrl:`mongodb+srv://${process.env.USER}:${process.env.KEY}@cluster0.frrn8pq.mongodb.net/ecommerce`,
@@ -37,9 +37,10 @@ app.use(session({
     resave:true,
     saveUninitialized: true
 }))
+*/
 
 /**
-* Middleware for parse to JSON 
+* Middleware to parse to JSON 
 */
 app.use(express.json())
 
